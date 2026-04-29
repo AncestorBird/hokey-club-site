@@ -545,6 +545,119 @@ body {
     box-shadow: 0 6px 20px rgba(0,61,130,0.25);
 }
 
+/* ===== Blog ===== */
+.global-nav a.is-current {
+    color: var(--white);
+    background: rgba(255,255,255,0.15);
+}
+
+.blog-main { padding-top: 70px; }
+
+.blog-hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 60%, var(--ice) 140%);
+    color: var(--white);
+    padding: 5rem 0 4rem;
+    text-align: center;
+}
+
+.blog-hero .section-label { color: var(--ice); }
+
+.blog-hero-title {
+    font-size: clamp(2rem, 4.5vw, 2.8rem);
+    font-weight: 900;
+    margin: 0.4rem 0 1rem;
+    letter-spacing: 0.05em;
+}
+
+.blog-hero-desc {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.95rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.blog-inner { max-width: 760px; }
+
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.blog-loading {
+    text-align: center;
+    color: var(--gray);
+    padding: 2rem 0;
+    font-size: 0.95rem;
+}
+
+.blog-post {
+    background: var(--white);
+    border: 1px solid #ececec;
+    border-radius: var(--radius);
+    padding: 2rem 2.2rem;
+    transition: var(--transition);
+}
+
+.blog-post:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-2px);
+}
+
+.blog-post-head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.blog-post-date {
+    font-family: "Oswald", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    color: var(--ice);
+    font-weight: 600;
+}
+
+.blog-post-author {
+    font-size: 0.78rem;
+    color: var(--gray);
+    background: var(--gray-light);
+    padding: 0.15rem 0.7rem;
+    border-radius: 50px;
+}
+
+.blog-post-title {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: var(--navy);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.blog-post-body {
+    color: var(--text);
+    font-size: 0.95rem;
+    line-height: 1.85;
+}
+
+.blog-post-body p { margin-bottom: 0.9rem; }
+.blog-post-body p:last-child { margin-bottom: 0; }
+.blog-post-body a { color: var(--navy2); text-decoration: underline; }
+.blog-post-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    margin: 1rem 0;
+}
+
+@media (max-width: 600px) {
+    .blog-post { padding: 1.5rem 1.3rem; }
+    .blog-post-title { font-size: 1.1rem; }
+    .blog-hero { padding: 4rem 0 3rem; }
+}
+
 /* ===== Footer ===== */
 .footer {
     background: var(--navy);
